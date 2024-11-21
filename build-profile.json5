@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/liutongji/.ohos/config/default_WanHarmonyTest_x2sPiCjXbXFLP0D2Ra3jqiJoHyUB2ayFwMUpQ8Tvb_s=.cer",
+          "storePassword": "0000001BB8ED9ADC8CE15224921E2E4771D4995B111A8D4027E47BDA9C6916DCEC1525A562C3D4613671C5",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BAFEA8D2C3F153BC3420DB733F5749C33A84B9385E0EB2EC1B04A16F125A9B46C9DC538778FEFAA",
+          "profile": "/Users/liutongji/.ohos/config/default_WanHarmonyTest_x2sPiCjXbXFLP0D2Ra3jqiJoHyUB2ayFwMUpQ8Tvb_s=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/liutongji/.ohos/config/default_WanHarmonyTest_x2sPiCjXbXFLP0D2Ra3jqiJoHyUB2ayFwMUpQ8Tvb_s=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",

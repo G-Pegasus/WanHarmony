@@ -7,5 +7,4 @@ export class BannerItem {
   title: string = "";
   type: number = 0;
   url: string = "";
-  collect: boolean = false; // 接口没有返回这个字段的
 }

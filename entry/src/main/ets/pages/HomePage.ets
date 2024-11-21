@@ -160,11 +160,12 @@ export struct HomePage {
     service.getBanner().then(result => {
       this.bannerList = result
     })
-    log(`${this.bannerList.length}`)
+    log(`"长度" + ${this.bannerList.length}`, "bannerlength")
     service.getHomeTopList().then(result => {
       this.homeTopList = result
     })
     this.loadList()
+    log(`"长度" + ${this.homeList.length}`, "homelength")
   }
 
   loadList() {

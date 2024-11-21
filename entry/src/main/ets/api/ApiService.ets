@@ -87,7 +87,7 @@ export class ApiService extends Service {
 
   // 获取轮播图
   async getBanner(): Promise<BannerItem[]> {
-    return RestfulApi.getResponse<BannerItem[]>({
+    return RestfulApi.getResponse({
       url: ApiPath.BANNER,
       method: 'GET'
     })
@@ -95,7 +95,7 @@ export class ApiService extends Service {
 
   // 置顶文章
   async getHomeTopList(): Promise<DataX[]> {
-    return RestfulApi.getResponse<DataX[]>({
+    return RestfulApi.getResponse({
       url: ApiPath.HOME_TOP_LIST,
       method: 'GET'
     })
@@ -103,12 +103,12 @@ export class ApiService extends Service {
 
   // 首页文章列表
   async getHomeList(page: number = 0, pageSize: number = 10): Promise<Articles> {
-    return RestfulApi.getResponse<Articles>({
+    return RestfulApi.getResponse({
       url: ApiPath.HOME_LIST(page),
       method: 'GET',
       data: {
-        page: page,
-        page_size: pageSize
+        page: String(page),
+        page_size: String(pageSize)
       }
     })
   }
